@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+	<style>
+		.problem{
+			color:red;
+		}
+		.solve{
+			color:green;
+		}
+		#footer {
+                height: 40px;
+                line-height: 40px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+				left:0px;
+				right:0px;
+                text-align: center;
+                background: #333;
+                color: #fff;
+                font-family: Arial;
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+	</style>
+</head>
+<body>
+<H1>美酷直播</H1>
+	<li>
+		<p>后台：营收管理</p>
+		<p class="problem">问题描述：在主播营收中出现收入明细与营收列表中的收入总和不一致</p>
+		<p>原因：在收入明细按主播ID查找缺少三选一游戏收入</p>
+		<p>深层原因：查询条件使用的user表中存在缺失anchor_id的主播用户</p>
+		<p class="solve">解决：使用三选一游戏表的anchor_id作为查询条件</p>
+		<p>2018-01-31 星期三</p>
+	</li>
+	<div id="footer">CopyRight@copy2018 lihome huanglihome@meicoolive.com</div>
+</body>
+</html>

@@ -34,6 +34,22 @@
 		<p class="solve">解决：使用三选一游戏表的anchor_id作为查询条件</p>
 		<p>2018-01-31 星期三</p>
 	</li>
+	<li>
+		<p>后台：列表图片显示BUG</p>
+		<p class="problem">问题描述：在列表中显示图片时，在没有图片的情况下出现错误的图片显示</p>
+		<p>原因：没有图片时图片地址显示为域名</p>
+		<p>深层原因：数据库查询时没有判断字段是否为空就直接拼接字符串</p>
+		<p class="solve">解决：查询数据库时先判断字段是否为空</p>
+		<p>2018-02-01 星期四</p>
+	</li>
+	<li>
+		<p>后台：上传flash及上传webp的BUG</p>
+		<p class="problem">问题描述：没有flash及webp时仍有空位，按钮不对齐，flash没显示</p>
+		<p>原因：有盒子存在占着位置，地址没有拼接全</p>
+		<p>深层原因：tp的empty不起作用，地址没有拼接全</p>
+		<p class="solve">解决：改用if判断，拼接地址</p>
+		<p>2018-02-01 星期四</p>
+	</li>
 	<div id="footer">CopyRight@copy2018 lihome huanglihome@meicoolive.com</div>
 </body>
 </html>

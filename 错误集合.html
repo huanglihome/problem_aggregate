@@ -50,6 +50,14 @@
 		<p class="solve">解决：改用if判断，拼接地址</p>
 		<p>2018-02-01 星期四</p>
 	</li>
+	<li>
+		<p>后台：优化家族营收计算总条数算法</p>
+		<p class="problem">问题描述：使用的count（select）的算法，后期数据如果过大，会有一定的影响</p>
+		<p>原因：count与group的不适配</p>
+		<p>深层原因：与count一起的group不起作用</p>
+		<p class="solve">解决：使用count的distinct去重达到分组效果</p>
+		<p>2018-02-05 星期一</p>
+	</li>
 	<div id="footer">CopyRight@copy2018 lihome huanglihome@meicoolive.com</div>
 </body>
 </html>
